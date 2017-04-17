@@ -50,5 +50,6 @@ for i = 3:peopleNum+2
 end
 % plot(data_ready);
 % hold on;
+
 % plot(locs,pks,'ro');
 % plot(locs_tru,pks2,'b*');
