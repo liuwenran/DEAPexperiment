@@ -1,5 +1,4 @@
-
-file = '/net/liuwenran/datasets/DEAP/experiment/ex1_fc_gt/data_peakfinder/';
+file = '/net/liuwenran/datasets/DEAP/experiment/ex1_fc_gt/dataSigPeak1024_2/';
 flist = dir(file);
 matrix = [];
 maxnum = 154;
@@ -21,8 +20,5 @@ for i = 3:length(flist)
             heartRate(j,k) = (heartRate(j,k) - minnum) / (maxnum -minnum);
         end
     end
-    save(['GTHR_norm_peakfinder2/',flist(i).name(1:3),'_norm.mat'],'heartRate');
+    save(['GTHR_norm_sigPeak1024_2/',flist(i).name(1:3),'_norm.mat'],'heartRate');
 end
-
-
-    
